@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-pod
+  labels:
+    tier: frontend
+spec:
+  containers:
+  - name: demo-app
+    image: depwaswho/kubernetes-demo-app:1.0.0
+    ports:
+    - containerPort: 80
